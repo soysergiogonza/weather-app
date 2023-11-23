@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/0b3eb0d831.js" defer crossorigin="anonymous"></script>
+	<script src="./js/index.js" defer></script>
+	<link rel="stylesheet" href="./css/index.css"/>
+	<title>Weather App</title>
+</head>
+<body>
+<main>
+	<section class="card">
+		<form class="search" id="search">
+			<label>
+				<input type="text" name="city" id='searchCity' placeholder="Ciudad" required>
+			</label>
+			<button id="buttonSearch">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
+		</form>
+		<span class="error" id="error"></span>
+		<article class="weather" id="weather">
+			<img src="./images/rain.png" alt="Rain" class="weather-icon" id="weather-icon"/>
+			<h1 class="temperature" id="temperature"></h1>
+			<h2 class="city" id="city"></h2>
+			<article class="details">
+				<picture>
+					<img src="./images/humidity.png" alt="humidity"/>
+					<div>
+						<p class="humidity" id="humidity"></p>
+						<h3>Humidity</h3>
+					</div>
+				</picture>
+				<picture>
+					<img src="./images/wind.png" alt="wind"/>
+					<div>
+						<p class="wind" id="wind"></p>
+						<h3>Wind Speed</h3>
+					</div>
+				</picture>
+			</article>
+		</article>
+	</section>
+</main>
+</body>
+</html>
